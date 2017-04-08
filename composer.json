@@ -1,0 +1,13 @@
+{
+    "name": "dbmover/pgsql-triggers",
+    "description": "Dbmover plugin for PostgreSQL-specific trigger (re)creation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marijn Ophorst",
+            "email": "marijn@monomelodies.nl"
+        }
+    ],
+    "require": {}
+}
