@@ -12,11 +12,13 @@ use Dbmover\Core;
 
 class Plugin extends Core\Plugin
 {
+    public $description = 'Dropping existing triggers...';
+
     public function __invoke(string $sql) : string
     {
         $tmp = md5(microtime(true));
         $database = $this->loader->getDatabase();
-        $this->loader->addOperation(<<<EOT
+        $this->addOperation(<<<EOT
 CREATE OR REPLACE FUNCTION strip_$tmp() RETURNS text AS $$ DECLARE
 triggRecord RECORD;
 BEGIN
@@ -29,16 +31,20 @@ $$ LANGUAGE plpgsql;
 SELECT strip_$tmp();
 DROP FUNCTION strip_$tmp();
 EOT
-            ,
-            '...stripping existing triggers...'
         );
         if (preg_match_all("@^CREATE TRIGGER.*?\(\);$@ms", $sql, $triggers, PREG_SET_ORDER)) {
             foreach ($triggers as $trigger) {
-                $this->triggers[] = $trigger[0];
+                $this->defer($trigger[0]);
                 $sql = str_replace($trigger[0], '', $sql);
             }
         }
         return $sql;
+    }
+
+    public function __destruct()
+    {
+        $this->description = 'Recreating triggers...';
+        parent::__destruct();
     }
 }
 
