@@ -10,7 +10,8 @@
         }
     ],
     "require": {
-        "dbmover/core": "^0.6.0"
+        "dbmover/core": "^0.6.2",
+        "dbmover/pgsql-procedures": "^0.6.3"
     },
     "autoload": {
         "psr-4": {
