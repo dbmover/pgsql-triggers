@@ -4,58 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a8aac653e086185dc2bee82ee6ff2d0d",
-    "content-hash": "7af20197160bd69e2d4bda919eec4a6f",
+    "hash": "6e5e59f7fe822836a2b1fde3dd11e68a",
+    "content-hash": "fb1fb8abb007b7dd9119873b6097f10e",
     "packages": [
         {
-            "name": "dariuszp/cli-progress-bar",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dariuszp/cli-progress-bar.git",
-                "reference": "54020a8fc60bf19579bfe0317f17a2848d48991d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dariuszp/cli-progress-bar/zipball/54020a8fc60bf19579bfe0317f17a2848d48991d",
-                "reference": "54020a8fc60bf19579bfe0317f17a2848d48991d",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Dariuszp\\": "src/Dariuszp"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dariusz Półtorak",
-                    "email": "poltorak.dariusz@gmail.com"
-                }
-            ],
-            "description": "Cli progress bar",
-            "time": "2015-11-02 14:38:59"
-        },
-        {
             "name": "dbmover/core",
-            "version": "0.6.0",
+            "version": "0.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbmover/core.git",
-                "reference": "f7e9972b9779456fb113ad30fb12a55d1688fcbb"
+                "reference": "696fe3323ccb3b70d676076c61d7d99cc780cd94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbmover/core/zipball/f7e9972b9779456fb113ad30fb12a55d1688fcbb",
-                "reference": "f7e9972b9779456fb113ad30fb12a55d1688fcbb",
+                "url": "https://api.github.com/repos/dbmover/core/zipball/696fe3323ccb3b70d676076c61d7d99cc780cd94",
+                "reference": "696fe3323ccb3b70d676076c61d7d99cc780cd94",
                 "shasum": ""
             },
             "require": {
-                "dariuszp/cli-progress-bar": "^1.0",
                 "monomelodies/kingconf": "^1.1"
             },
             "require-dev": {
@@ -81,7 +47,79 @@
                 }
             ],
             "description": "PHP-based database versioning tool, core components",
-            "time": "2017-04-08 14:58:17"
+            "time": "2017-04-15 15:28:11"
+        },
+        {
+            "name": "dbmover/pgsql-procedures",
+            "version": "0.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dbmover/pgsql-procedures.git",
+                "reference": "e74bc4a27aa30c43ebae465d180a3616d63978fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dbmover/pgsql-procedures/zipball/e74bc4a27aa30c43ebae465d180a3616d63978fe",
+                "reference": "e74bc4a27aa30c43ebae465d180a3616d63978fe",
+                "shasum": ""
+            },
+            "require": {
+                "dbmover/procedures": "^0.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dbmover\\Pgsql\\Procedures\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marijn Ophorst",
+                    "email": "marijn@monomelodies.nl"
+                }
+            ],
+            "description": "Dbmover plugin for (re)creating PostgreSQL procedures",
+            "time": "2017-04-16 05:45:12"
+        },
+        {
+            "name": "dbmover/procedures",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dbmover/procedures.git",
+                "reference": "e88bc728272f5e51b7fa1124b1e85afa241a7ece"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dbmover/procedures/zipball/e88bc728272f5e51b7fa1124b1e85afa241a7ece",
+                "reference": "e88bc728272f5e51b7fa1124b1e85afa241a7ece",
+                "shasum": ""
+            },
+            "require": {
+                "dbmover/core": "^0.6.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dbmover\\Procedures\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marijn Ophorst",
+                    "email": "marijn@monomelodies.nl"
+                }
+            ],
+            "description": "Dbmover plugin to (re)create procedures",
+            "time": "2017-04-15 06:36:08"
         },
         {
             "name": "monomelodies/kingconf",
