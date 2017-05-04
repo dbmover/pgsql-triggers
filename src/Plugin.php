@@ -19,13 +19,12 @@ class Plugin extends Core\Plugin
         $tmp = md5(microtime(true));
         $database = $this->loader->getDatabase();
         $this->addOperation(<<<EOT
-CREATE OR REPLACE FUNCTION strip_$tmp() RETURNS text AS $$ DECLARE
+CREATE OR REPLACE FUNCTION strip_$tmp() RETURNS void AS $$ DECLARE
 triggRecord RECORD;
 BEGIN
     FOR triggRecord IN select DISTINCT trigger_name, event_object_table from information_schema.triggers where trigger_schema = 'public' AND trigger_catalog = '$database' LOOP
         EXECUTE 'DROP TRIGGER ' || triggRecord.trigger_name || ' ON ' || triggRecord.event_object_table || ';';
     END LOOP;
-    RETURN 'done';
 END;
 $$ LANGUAGE plpgsql;
 SELECT strip_$tmp();
