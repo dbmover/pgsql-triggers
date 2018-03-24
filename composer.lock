@@ -4,28 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6e5e59f7fe822836a2b1fde3dd11e68a",
-    "content-hash": "fb1fb8abb007b7dd9119873b6097f10e",
+    "hash": "aa3fc378fd2170331c002bbad884bce6",
+    "content-hash": "34cb77a38af44f4b7be05b31c970200f",
     "packages": [
         {
             "name": "dbmover/core",
-            "version": "0.6.2",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbmover/core.git",
-                "reference": "696fe3323ccb3b70d676076c61d7d99cc780cd94"
+                "reference": "b94862d0a6f24ff7be859b3187cddbe52513fcc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbmover/core/zipball/696fe3323ccb3b70d676076c61d7d99cc780cd94",
-                "reference": "696fe3323ccb3b70d676076c61d7d99cc780cd94",
+                "url": "https://api.github.com/repos/dbmover/core/zipball/b94862d0a6f24ff7be859b3187cddbe52513fcc3",
+                "reference": "b94862d0a6f24ff7be859b3187cddbe52513fcc3",
                 "shasum": ""
             },
             "require": {
-                "monomelodies/kingconf": "^1.1"
+                "monomelodies/kingconf": "^1.1",
+                "php": ">=7.2"
             },
             "require-dev": {
-                "gentry/gentry": "^0.10.2"
+                "gentry/gentry": "^0.13.0",
+                "gentry/toast": "^0.1.0",
+                "toast/unit": "^1.3"
             },
             "bin": [
                 "bin/dbmover"
@@ -47,20 +50,20 @@
                 }
             ],
             "description": "PHP-based database versioning tool, core components",
-            "time": "2017-04-15 15:28:11"
+            "time": "2018-03-24 07:05:17"
         },
         {
             "name": "dbmover/pgsql-procedures",
-            "version": "0.6.3",
+            "version": "0.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbmover/pgsql-procedures.git",
-                "reference": "e74bc4a27aa30c43ebae465d180a3616d63978fe"
+                "reference": "f654695d6deeee89706103361765f7031f8d00a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbmover/pgsql-procedures/zipball/e74bc4a27aa30c43ebae465d180a3616d63978fe",
-                "reference": "e74bc4a27aa30c43ebae465d180a3616d63978fe",
+                "url": "https://api.github.com/repos/dbmover/pgsql-procedures/zipball/f654695d6deeee89706103361765f7031f8d00a3",
+                "reference": "f654695d6deeee89706103361765f7031f8d00a3",
                 "shasum": ""
             },
             "require": {
@@ -83,24 +86,25 @@
                 }
             ],
             "description": "Dbmover plugin for (re)creating PostgreSQL procedures",
-            "time": "2017-04-16 05:45:12"
+            "time": "2017-11-13 14:44:12"
         },
         {
             "name": "dbmover/procedures",
-            "version": "0.6.0",
+            "version": "0.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbmover/procedures.git",
-                "reference": "e88bc728272f5e51b7fa1124b1e85afa241a7ece"
+                "reference": "290504e37f3bd10053161ee0ec516ab96f83a5a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbmover/procedures/zipball/e88bc728272f5e51b7fa1124b1e85afa241a7ece",
-                "reference": "e88bc728272f5e51b7fa1124b1e85afa241a7ece",
+                "url": "https://api.github.com/repos/dbmover/procedures/zipball/290504e37f3bd10053161ee0ec516ab96f83a5a6",
+                "reference": "290504e37f3bd10053161ee0ec516ab96f83a5a6",
                 "shasum": ""
             },
             "require": {
-                "dbmover/core": "^0.6.1"
+                "dbmover/core": "^0.7.0",
+                "php": ">=7.2"
             },
             "type": "library",
             "autoload": {
@@ -119,20 +123,20 @@
                 }
             ],
             "description": "Dbmover plugin to (re)create procedures",
-            "time": "2017-04-15 06:36:08"
+            "time": "2018-03-24 07:49:52"
         },
         {
             "name": "monomelodies/kingconf",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/monomelodies/kingconf.git",
-                "reference": "350bf4e1f8163b5843f9dec82bd6230968166015"
+                "reference": "ddf504a7f5fa50adeb68eb7627a76fbbdd5b8b3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/monomelodies/kingconf/zipball/350bf4e1f8163b5843f9dec82bd6230968166015",
-                "reference": "350bf4e1f8163b5843f9dec82bd6230968166015",
+                "url": "https://api.github.com/repos/monomelodies/kingconf/zipball/ddf504a7f5fa50adeb68eb7627a76fbbdd5b8b3a",
+                "reference": "ddf504a7f5fa50adeb68eb7627a76fbbdd5b8b3a",
                 "shasum": ""
             },
             "require": {
@@ -169,27 +173,30 @@
                 "xml",
                 "yaml"
             ],
-            "time": "2016-07-15 06:21:55"
+            "time": "2018-02-01 18:46:24"
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.2.7",
+            "version": "v4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "62b4cdb99d52cb1ff253c465eb1532a80cebb621"
+                "reference": "de5f125ea39de846b90b313b2cfb031a0152d223"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/62b4cdb99d52cb1ff253c465eb1532a80cebb621",
-                "reference": "62b4cdb99d52cb1ff253c465eb1532a80cebb621",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/de5f125ea39de846b90b313b2cfb031a0152d223",
+                "reference": "de5f125ea39de846b90b313b2cfb031a0152d223",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9"
+                "php": "^7.1.3"
+            },
+            "conflict": {
+                "symfony/console": "<3.4"
             },
             "require-dev": {
-                "symfony/console": "~2.8|~3.0"
+                "symfony/console": "~3.4|~4.0"
             },
             "suggest": {
                 "symfony/console": "For validating YAML files using the lint command"
@@ -197,7 +204,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -224,7 +231,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-03-20 09:45:15"
+            "time": "2018-02-19 20:08:53"
         }
     ],
     "packages-dev": [],
