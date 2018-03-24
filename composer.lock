@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "aa3fc378fd2170331c002bbad884bce6",
-    "content-hash": "34cb77a38af44f4b7be05b31c970200f",
+    "hash": "cb0f306241a7bef89450892b4dfcbe88",
+    "content-hash": "96fd54816c5aa65bf97d03926f5d56ce",
     "packages": [
         {
             "name": "dbmover/core",
-            "version": "0.7.0",
+            "version": "0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbmover/core.git",
-                "reference": "b94862d0a6f24ff7be859b3187cddbe52513fcc3"
+                "reference": "65ebb5fb410080f1a533892f86fe795923d74d28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbmover/core/zipball/b94862d0a6f24ff7be859b3187cddbe52513fcc3",
-                "reference": "b94862d0a6f24ff7be859b3187cddbe52513fcc3",
+                "url": "https://api.github.com/repos/dbmover/core/zipball/65ebb5fb410080f1a533892f86fe795923d74d28",
+                "reference": "65ebb5fb410080f1a533892f86fe795923d74d28",
                 "shasum": ""
             },
             "require": {
@@ -50,24 +50,25 @@
                 }
             ],
             "description": "PHP-based database versioning tool, core components",
-            "time": "2018-03-24 07:05:17"
+            "time": "2018-03-24 17:47:12"
         },
         {
             "name": "dbmover/pgsql-procedures",
-            "version": "0.6.4",
+            "version": "0.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbmover/pgsql-procedures.git",
-                "reference": "f654695d6deeee89706103361765f7031f8d00a3"
+                "reference": "4ba1cde2fde0a2ee0b12871eae9b78989c1a2b06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbmover/pgsql-procedures/zipball/f654695d6deeee89706103361765f7031f8d00a3",
-                "reference": "f654695d6deeee89706103361765f7031f8d00a3",
+                "url": "https://api.github.com/repos/dbmover/pgsql-procedures/zipball/4ba1cde2fde0a2ee0b12871eae9b78989c1a2b06",
+                "reference": "4ba1cde2fde0a2ee0b12871eae9b78989c1a2b06",
                 "shasum": ""
             },
             "require": {
-                "dbmover/procedures": "^0.6.0"
+                "dbmover/procedures": "^0.6.3",
+                "php": ">=7.2"
             },
             "type": "library",
             "autoload": {
@@ -86,24 +87,24 @@
                 }
             ],
             "description": "Dbmover plugin for (re)creating PostgreSQL procedures",
-            "time": "2017-11-13 14:44:12"
+            "time": "2018-03-24 07:52:49"
         },
         {
             "name": "dbmover/procedures",
-            "version": "0.6.3",
+            "version": "0.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dbmover/procedures.git",
-                "reference": "290504e37f3bd10053161ee0ec516ab96f83a5a6"
+                "reference": "42b56ad492149ecf2caab29e25254b21d8a21d02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dbmover/procedures/zipball/290504e37f3bd10053161ee0ec516ab96f83a5a6",
-                "reference": "290504e37f3bd10053161ee0ec516ab96f83a5a6",
+                "url": "https://api.github.com/repos/dbmover/procedures/zipball/42b56ad492149ecf2caab29e25254b21d8a21d02",
+                "reference": "42b56ad492149ecf2caab29e25254b21d8a21d02",
                 "shasum": ""
             },
             "require": {
-                "dbmover/core": "^0.7.0",
+                "dbmover/core": "^0.8.0",
                 "php": ">=7.2"
             },
             "type": "library",
@@ -123,7 +124,7 @@
                 }
             ],
             "description": "Dbmover plugin to (re)create procedures",
-            "time": "2018-03-24 07:49:52"
+            "time": "2018-03-24 17:50:30"
         },
         {
             "name": "monomelodies/kingconf",
@@ -240,6 +241,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.2"
+    },
     "platform-dev": []
 }
